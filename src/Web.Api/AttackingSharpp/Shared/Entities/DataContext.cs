@@ -6,5 +6,7 @@ namespace Web.Api.AttackingSharpp.Shared.Entities
     {
         public DataContext(DbContextOptions<DataContext>options)
         : base(options){ }
+
+        public DbSet<QuizItem> QuizItems { get; set; }
     }
 }
