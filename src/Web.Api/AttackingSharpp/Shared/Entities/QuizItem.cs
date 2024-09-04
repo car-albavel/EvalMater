@@ -9,7 +9,7 @@ namespace Web.Api.AttackingSharpp.Shared.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public String Question { get; set; }
-        public String Choices { get; set; }
+        public string[] Choices { get; set; }
         public int AnswerIndex { get; set; }
         public int Score { get; set; }
 
